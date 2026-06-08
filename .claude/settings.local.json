@@ -6,7 +6,12 @@
       "Bash(npm run *)",
       "Bash(pkill -f \"next dev\")",
       "Bash(taskkill /PID 49136 /F)",
-      "Bash(timeout 2)"
+      "Bash(timeout 2)",
+      "Bash(git config *)",
+      "Bash(git add *)",
+      "Bash(git commit -m 'fix mobile emoji centering inside circle containers *)",
+      "Bash(git push *)",
+      "Bash(git commit *)"
     ]
   }
 }

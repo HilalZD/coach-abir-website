@@ -17,7 +17,7 @@ export const siteConfig = {
   telegram: "https://t.me/coach_abir_khodor",
   location: "https://maps.app.goo.gl/UszHbDa2z4SzDie48",
   sessionOriginalPrice: "$111",
-  sessionPrice: "$60",
+  sessionPrice: "$69",
   sessionDesc: "رحلة وعي ومرافقة لاكتشاف ذاتك وبناء الحياة التي تستحقها. ٦٠ دقيقة من العمل العميق مع خطة عمل واضحة تطبّقها معي خطوةً بخطوة",
   bookingCalendarUrl: "https://calendar.app.google/1Me16rzRkL2AVj4S8", 
   workshopGroupLink:"https://www.instagram.com/abirkhodor.coach",
