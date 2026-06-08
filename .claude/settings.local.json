@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ping -n 6 127.0.0.1)",
+      "Read(//c/Users/user/AppData/Local/Temp/**)",
+      "Bash(npm run *)",
+      "Bash(pkill -f \"next dev\")",
+      "Bash(taskkill /PID 49136 /F)",
+      "Bash(timeout 2)"
+    ]
+  }
+}

@@ -1,0 +1,195 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Base RTL & Font ─────────────────────────── */
+html {
+  direction: rtl;
+  font-family: var(--font-tajawal), 'Tajawal', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FFF9FB;
+  color: #3A2030;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ─── Scrollbar ──────────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #FFF9FB; }
+::-webkit-scrollbar-thumb { background: #F4C2D0; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #A88C56; }
+
+/* ─── Champagne Text Gradient Utility ────────── */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #A88C56, #8A6F3E);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ─── Global Button — ONE style, zero exceptions ─ */
+button,
+.btn-gold {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: linear-gradient(135deg, #F2E1B0, #DCC086, #A88C56);
+  border: none;
+  color: #3A2515;
+  border-radius: 35px;
+  padding: 14px 36px;
+  font-size: 14px;
+  font-weight: 900;
+  font-family: var(--font-tajawal), 'Tajawal', sans-serif;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 14px rgba(168, 140, 86, 0.45);
+  text-decoration: none;
+  white-space: nowrap;
+}
+button:hover,
+.btn-gold:hover {
+  background: linear-gradient(135deg, #DCC086, #A88C56, #8A6F3E);
+  color: #3A2515;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(168, 140, 86, 0.6);
+}
+button:active,
+.btn-gold:active {
+  background: linear-gradient(135deg, #A88C56, #8A6F3E, #6B5530);
+  color: #3A2515;
+  transform: scale(0.98);
+}
+
+/* ─── Champagne Divider ──────────────────────── */
+.gold-divider {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #F4C2D0, #A88C56, #F4C2D0);
+  border-radius: 2px;
+  margin: 0 auto 18px;
+}
+
+/* ─── Section Label ──────────────────────────── */
+.section-label {
+  font-size: 10px;
+  color: #A88C56;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 8px;
+}
+
+/* ─── Pill Badge ─────────────────────────────── */
+.pill-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: #FDE8F0;
+  border: 1px solid #F4B8D0;
+  color: #C2547A;
+  border-radius: 20px;
+  padding: 4px 14px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* ─── Form Input ─────────────────────────────── */
+.form-input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1.5px solid #F4C2D0;
+  border-radius: 10px;
+  font-family: var(--font-tajawal), 'Tajawal', sans-serif;
+  font-size: 13px;
+  color: #2C1A30;
+  background: white;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.form-input:focus { border-color: #A88C56; box-shadow: 0 0 0 3px rgba(168,140,86,0.1); }
+.form-input::placeholder { color: #B07090; }
+
+.form-textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1.5px solid #F4C2D0;
+  border-radius: 10px;
+  font-family: var(--font-tajawal), 'Tajawal', sans-serif;
+  font-size: 13px;
+  color: #2C1A30;
+  background: white;
+  outline: none;
+  resize: vertical;
+  min-height: 90px;
+  transition: border-color 0.2s;
+}
+.form-textarea:focus { border-color: #A88C56; box-shadow: 0 0 0 3px rgba(168,140,86,0.1); }
+.form-textarea::placeholder { color: #B07090; }
+
+.form-select {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1.5px solid #F4C2D0;
+  border-radius: 10px;
+  font-family: var(--font-tajawal), 'Tajawal', sans-serif;
+  font-size: 13px;
+  color: #2C1A30;
+  background: white;
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23A88C56' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: left 14px center;
+}
+.form-select:focus { border-color: #A88C56; }
+
+/* ─── Phone/Email inputs stay LTR ───────────── */
+input[type="email"],
+input[type="tel"] {
+  direction: ltr;
+  text-align: right;
+}
+
+/* ─── Dir-specific letter-spacing ───────────── */
+/* English (LTR) benefits from a slight tracking increase;
+   Arabic (RTL) looks best with no tracking modification. */
+[dir="ltr"] { letter-spacing: 0.01em; }
+[dir="rtl"] { letter-spacing: 0; }
+
+/* ─── Page top padding (navbar height) ──────── */
+.page-content { padding-top: 56px; }
+
+/* ─── Carousel drag cursor ───────────────────── */
+.cursor-grab { cursor: grab; }
+.cursor-grabbing { cursor: grabbing; }
+
+/* ─── Prevent text selection during drag ──────  */
+.no-select {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* ─── Mobile-specific fixes (max-width: 768px) ── */
+@media (max-width: 768px) {
+  /* FIX 1: Hero tag pill — center on mobile and add spacing */
+  .pill-badge {
+    display: block;
+    margin: 24px auto 16px auto;
+    text-align: center;
+    width: fit-content;
+  }
+
+  /* FIX 2: Language toggle — move to left side on mobile */
+  .lang-toggle {
+    top: 64px !important;
+    left: 16px !important;
+    right: auto !important;
+    insetInlineStart: 16px !important;
+    insetInlineEnd: auto !important;
+  }
+}

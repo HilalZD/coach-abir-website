@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="400" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FDE8F0"/>
+      <stop offset="50%" stop-color="#FFF0F7"/>
+      <stop offset="100%" stop-color="#FDF7EE"/>
+    </linearGradient>
+    <linearGradient id="gold1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#C9A96E"/>
+      <stop offset="100%" stop-color="#F5D89A"/>
+    </linearGradient>
+    <linearGradient id="pink1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F4C2D0"/>
+      <stop offset="100%" stop-color="#FDE8F0"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(201,169,110,0.2)"/>
+      <stop offset="100%" stop-color="rgba(201,169,110,0)"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#bg)"/>
+
+  <!-- Soft glow center -->
+  <ellipse cx="200" cy="150" rx="160" ry="120" fill="url(#glow1)"/>
+
+  <!-- Abstract workshop circles -->
+  <circle cx="90" cy="90" r="55" fill="url(#pink1)" opacity="0.6"/>
+  <circle cx="310" cy="80" r="45" fill="url(#gold1)" opacity="0.35"/>
+  <circle cx="200" cy="200" r="65" fill="url(#pink1)" opacity="0.4"/>
+  <circle cx="330" cy="220" r="35" fill="url(#gold1)" opacity="0.3"/>
+  <circle cx="70" cy="220" r="30" fill="url(#gold1)" opacity="0.25"/>
+
+  <!-- Gold ring ornament -->
+  <circle cx="200" cy="130" r="50" fill="none" stroke="#C9A96E" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.5"/>
+  <circle cx="200" cy="130" r="38" fill="none" stroke="#F4C2D0" stroke-width="1" opacity="0.6"/>
+
+  <!-- Central icon group -->
+  <circle cx="200" cy="130" r="28" fill="rgba(255,255,255,0.7)"/>
+  <!-- Star sparkle -->
+  <text x="200" y="140" font-size="26" text-anchor="middle" dominant-baseline="middle" opacity="0.85">✦</text>
+
+  <!-- Decorative sparkles scattered -->
+  <text x="60" y="60" font-size="14" opacity="0.5" fill="#C9A96E">✦</text>
+  <text x="340" y="55" font-size="10" opacity="0.4" fill="#C2547A">✦</text>
+  <text x="350" y="250" font-size="12" opacity="0.45" fill="#C9A96E">✦</text>
+  <text x="40" y="260" font-size="9" opacity="0.35" fill="#C2547A">✦</text>
+  <text x="195" y="275" font-size="11" opacity="0.4" fill="#C9A96E">✦</text>
+
+  <!-- Bottom label area -->
+  <rect x="100" y="228" width="200" height="44" rx="22" fill="rgba(255,255,255,0.55)"/>
+  <text x="200" y="244" font-family="Tajawal, sans-serif" font-size="11" text-anchor="middle" fill="#7A4E6E" dominant-baseline="auto" opacity="0.9">صورة الورشة هنا</text>
+  <text x="200" y="260" font-family="Tajawal, sans-serif" font-size="9" text-anchor="middle" fill="#B07090" opacity="0.7">Workshop image here</text>
+</svg>
