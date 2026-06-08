@@ -178,7 +178,7 @@ If you have any questions regarding this Disclaimer, please contact us through t
                     .split('\n')
                     .map((line) => {
                       if (line.startsWith('#')) {
-                        const level = line.match(/^#+/)[0].length
+                        const level = line.match(/^#+/)![0].length
                         const text = line.replace(/^#+\s/, '')
                         return `<h${level} style="font-weight: 700; margin: 24px 0 12px; color: #A88C56; font-size: ${24 - level * 2}px;">${text}</h${level}>`
                       }
