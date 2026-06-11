@@ -22,10 +22,10 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: `${siteConfig.coachName} | كوتش معتمد دولياً`,
+  title: `${siteConfig.coachName}`,
   description: siteConfig.tagline,
   openGraph: {
-    title: `${siteConfig.coachName} | كوتش معتمد دولياً`,
+    title: `${siteConfig.coachName}`,
     description: siteConfig.tagline,
     locale: 'ar_AR',
     type: 'website',
